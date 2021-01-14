@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clothing store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="order_form.php" method="post">
+        <div class="left">
+            <div class="center">
+                <div class="firstname">
+                    <h3>Dane osobowe:
+                    </h3>
+                    <input class="text" type="text" name="firstname" placeholder="Imię" />
+                </div>
+
+                <div class="lastname">
+                    <input class="text" type="text" name="lastname" placeholder="Nazwisko" />
+                </div>
+
+                <div class="address">
+                    <input class="text" type="text" name="address" placeholder="Adres" />
+                </div>
+
+                <div class="e-mail">
+                    <input class="text" type="text" name="e-mail" placeholder="E-mail">
+                </div>
+
+                <div class="phone_number">
+                    <input class="text" type="text" name="phone_number" placeholder="Nr Telefonu" />
+                </div>
+            </div>
+        </div>
+
+        <div class="right clearfix">
+            <div class="center">
+                <div class="pants">
+                    <h3>Produkty:</h3>
+                    <div>
+                        <input type="checkbox" name="product[]" value="Spodnie"> Spodnie - 110PLN/1szt.
+                    </div>
+                    <div>
+                        <input class="text" type="text" name="q_pants" placeholder="Ilość" />
+                    </div>
+                </div>
+
+
+                <div class="cap">
+                    <div>
+                        <input type="checkbox" name="product[]" value="Czapka"> Czapka - 50PLN/1szt.
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <input class="text" type="text" name="q_cap" placeholder="Ilość" />
+                    </div>
+                </div>
+
+
+                <div class="jacket">
+                    <div>
+                        <input type="checkbox" name="product[]" value="Kurtka"> Kurtka - 250PLN/1szt.
+                    </div>
+                    <div>
+                        <input class="text" type="text" name="q_jacket" placeholder="Ilość" />
+                    </div>
+                </div>
+
+
+
+                <div class="shirt">
+                    <div>
+                        <input type="checkbox" name="product[]" value="Koszula"> Koszula - 80PLN/1szt.
+                        <p></p>
+                    </div>
+                    <div>
+                        <input class="text" type="text" name="q_shirt" placeholder="Ilość" />
+                    </div>
+                </div>
+
+
+                <div class="t-shirt">
+                    <div>
+                        <input type="checkbox" name="product[]" value="T-shirt"> T-Shirt - 45PLN/1szt.
+                    </div>
+                    <div>
+                        <input class="text" type="text" name="q_tshirt" placeholder="Ilość" />
+                    </div>
+                </div>
+
+
+                <div class="hoodie">
+                    <div>
+                        <input class="checkbox" type="checkbox" name="product[]" value="Bluza"> Bluza - 150PLN/1szt.
+                    </div>
+                    <div>
+                        <input class="text" type="text" name="q_hoodie" placeholder="Ilość" />
+                    </div>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="Wyślij" name="submit" />
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
